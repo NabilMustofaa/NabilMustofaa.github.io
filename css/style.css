@@ -85,7 +85,12 @@ a{
     color: #D7D7D7;
 }
 
-
+.contact{
+    color:black ;
+    padding: 10px;
+    background-color: #D7D7D7;
+    border-radius: 30px;
+}
 h4,h1,h2{
     margin : 0;
     font-style: normal;
