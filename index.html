@@ -13,15 +13,17 @@
     </head>
 </head>
 <body >
+    <header>
+    <nav >
+        <div class= nav-container>
+            <a class = nav-normal href="#about">About</a>
+            <a class = nav-normal href="#skill">Skill</a>
+            <a class = nav-normal href="#porto">Portofolio</a>
+            <a class = "nav-contact nav-normal " href="#contact">Contact</a>
+        </div>
+    </nav>
+    </header>
     <div class=main>
-        <nav>
-            <div class= nav-container>
-                <a class = nav-normal href="#">ABOUT</a>
-                <a class = nav-normal href="#">SKILL</a>
-                <a class = nav-normal href="#">PORTOFOLIO</a>
-                <a class = "nav-contact nav-normal " href="#">CONTACT</a>
-            </div>
-        </nav>
         <!-- content -->
         <div class = bg-main>
             <div class = main-divider>
@@ -44,9 +46,10 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    
+    <div id="about" class="about">
         <div class = "box">
-            <div class ="box-text">ABOUT ME</div>
+            <div class ="box-text">ABOUT</div>
         </div>
         <div class = "about-text">I am college student at Airlangga University, Science and Technology Faculty, Bachelor Degree of Information System. Curently highly focused at learning more about web development and software engginering</div>
         <div class = "divider" ><img src="img/separatorBlack 1.png"></div>
@@ -65,6 +68,8 @@
             </div>
         </div>
         <div class = "divider" ><img src="img/separatorBlack 1.png"></div>
+    </div>
+    <div id="skill" class="skill">
         <div class = "box">
             <div class ="box-text">SKILL</div>
         </div>
@@ -92,7 +97,7 @@
         </div>
     </div>
 
-    <div class="porto">
+    <div id="porto" class="porto">
         <div class = "box">
             <div class ="box-text">PORTOFOLIO</div>
         </div>
@@ -104,7 +109,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class = "box">
             <div class ="box-text">CONTACT</div>
         </div>
@@ -138,5 +143,6 @@
             <b>@2022 Nabil Mustofa</b>&nbsp All Rights Reserved.
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
