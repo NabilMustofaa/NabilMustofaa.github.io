@@ -32,7 +32,7 @@ body{
     
 }
 .text-place{
-    margin: 55vh 0 0 20vw;
+    margin: 60vh 0 0 20vw;
     transform: rotate(-9.67deg);
 }
 
@@ -81,8 +81,9 @@ a{
 }
 .nav-container{
     display: flex;
+    flex-direction: row-reverse;
     width : 40vw;
-    margin : 0 auto 0.5% 60vw;
+    margin : 0 5vw 0.5% 55vw;
     z-index: 99;
 }
 
@@ -121,8 +122,8 @@ h1.name{
 
 .box{
     display: flex;
-    margin: 5vh 35vw 10vh 35vw;
-    padding: 20px 40px 20px 40px;
+    margin: 5vh 30vw 10vh 30vw;
+    padding: 1rem 2rem 1rem 2rem;
     border: 4px solid #0B0B0B;
     justify-content: center;
     width: auto;
@@ -149,13 +150,13 @@ h1.name{
     font-style: normal;
     font-size: 1.2rem;
     margin: 0 25vw 0 25vw;
-    width : 50vw;
+    width : fit-content;
     text-align: center;
 }
 .about-speciality-container{
-    margin: 10vh 20vw 0vh 20vw;
+    margin: 0 20vw 0vh 20vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30vw 30vw;
     grid-template-rows: 10vh, 5vh;
     grid-gap: 2vh 5vw;
     justify-content: center;
@@ -163,18 +164,21 @@ h1.name{
 .speciality-container{
     display: flex; 
 }
+.img-speciality{
+    height: 4rem;
+}
 .header-speciality{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5rem;
-    margin: -35px 0 20px 60px;
+    margin: -2rem 0 2rem 3rem;
 }
 .text-speciality{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-size: 1.2rem;
-    margin: 0px 0 20px 60px;
+    margin: 0 0 0 3rem;
 }
 
 .explore{
@@ -199,24 +203,30 @@ h1.name{
     width : 60vw;
     text-align: left;
 }
-.about-skill-container{
-    margin: 5vh 20vw 5vh 20vw;
+.grid-skill{
+    margin: 5vh 15vw 5vh 15vw;
     display: grid;
-    grid-template-columns:  auto auto auto auto;
-    grid-template-rows: 10vh, 5vh;
-    grid-gap: 2vh 7vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-gap: 3vw;
     justify-content: center;
 
+}
+.skill-container{
+    display: grid;
+    grid-template-rows: 10vh 5vh;
+    justify-content: center;
+    grid-row-gap: 5vh;
 }
 .text-skill{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 1.2rem;
-    justify-self: center;
+    text-align: center;
 }
 .img-skill{
-    width : 100px;
-    justify-self: center;
+    margin: 0 3vw 0 3vw;
+    height: 5rem;
+    width: 5rem;
 } 
 .porto-container{
     height: 80vh;
@@ -273,7 +283,7 @@ textarea{
     padding: 1vw;
     font-family: 'Montserrat', sans-serif;
     font-style: bolder;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 .image-place:hover .overlay {
@@ -283,11 +293,10 @@ textarea{
 footer{
     background: #1A1A1A;
     height: 25vh;
-    padding: 5vh 35vw 5vh 35vw;
+    padding: 5vh 0 5vh 0;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .footer-container{
     color: #f1f1f1;
@@ -307,4 +316,80 @@ footer{
 .img-footer{
     height: 3vh;
     margin: 0 1vh 0 1vh ;
+}
+
+@media only screen and (max-width:576px) {
+    :root{
+        font-size: 8px;
+        overflow-x: hidden;
+    }
+    body{
+        width: 100vw;
+    }
+    .main{
+        background-image: url(/img/back_potrait.png);
+        width: 100w;
+        height: 100vh;
+    }
+
+    .bg-main{
+        height: 100vh;
+    }
+    .text-place{
+        transform: none;
+        margin: 5vh;
+    }
+    .main-button-container{
+        transform: none;
+        margin: 10vh 5vw 0 auto;
+        flex-direction: column;
+        height: 2vh;
+    }
+    .main-button{
+        transform: none;
+        all: unset;
+        margin-top:0
+    }
+    .main-divider{
+        transform: none;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        margin: 70vh 0 0 0;
+    }
+    .about-text{
+        margin : 0 10vw 0 10vw;
+        width: fit-content;
+    }
+    .about-speciality-container{
+        margin: 0 10vw 0 10vw;
+        width: 80vw;
+        grid-template-columns: none;
+    }
+    .about,.skill,.contact{
+        padding : 6vh 0 2vh 0;
+    }
+    .divider{
+        margin:0;
+    }
+    .img-speciality{
+        height: 5vh;
+    }
+    .header-speciality{
+        margin: -2.5vh 0 5vh 7.5vw;
+    }
+    .grid-skill{
+        grid-template-columns: 20vw 20vw;
+        grid-gap: 5vh 5vh;
+        grid-template-rows: 20vw 20vw;
+    }
+    .skill-container{
+        grid-row-gap: 0;
+    }
+    .box{
+        margin:5vh 25vw 10vh 25vw
+    }
+    .contact-input{
+       width: 60vw; 
+    }
 }
