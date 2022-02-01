@@ -8,19 +8,23 @@
         <title>Nabil Portofolio</title>
         <!--font-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--logo-->
+        <link href='https://css.gg/menu.css' rel='stylesheet'>
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
     </head>
 </head>
 <body >
-    <nav >
-        <div class=logo-container><a class = "nav-normal logo " href="#">NABILM</a></div>
-        <ul class= nav-container>
-            <li><a class = "nav-contact nav-normal " href="#contact">Contact</a></li>
-            <li><a class = nav-normal href="#porto">Portofolio</a></li>
-            <li><a class = nav-normal href="#skill">Skill</a></li>
-            <li><a class = nav-normal href="#about">About</a></li>
-        </ul>
+    <nav>
+        <a href="javascript:void(0);" class="nav-menu" onclick="myFunction()">
+            <i class="gg-menu"></i>
+        </a>
+        <div class= nav-container>
+            <a class = "nav-contact nav-normal " href="#contact">Contact</a>
+            <a class = nav-normal href="#porto">Portofolio</a>
+            <a class = nav-normal href="#skill">Skill</a>
+            <a class = nav-normal href="#about">About</a>
+        </div>
     </nav>
     <div class=main>
         <!-- content -->
@@ -164,6 +168,7 @@
             <b>@2022 Nabil Mustofa</b>&nbsp All Rights Reserved.
         </div>
     </footer>
+    <script src="js/nav.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

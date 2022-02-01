@@ -64,16 +64,17 @@ li{
     text-decoration: none;
 }
 nav{
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0.5rem 1rem 0 0;
     position: fixed;
     transition: background 250ms ease-in;
     z-index: 999;
 }
 
 .nav-scrolled{
-    background-color: #0B0B0B;
+    background-color: #1A1A1A;
 }
 a{
     flex-direction: column;
@@ -86,21 +87,12 @@ a{
     display: flex;
     flex-direction: row-reverse;
     width : 40vw;
-    margin : 2vh 5vw 2vh 40vw;
-    z-index: 99;
-    list-style: none;
-}
-ul{
-    all: unset;
-}
-li{
-    margin: 0;
-    padding: 0;
+    margin : 0 5vw 0.5rem 55vw;
+    z-index: 98;
 }
 
 .nav-normal{
     margin-left: 40px;
-    margin-top: 10px;
     font-size: 1rem;
     padding: 10px;
     color: #D7D7D7;
@@ -118,6 +110,12 @@ li{
     background-color: #D7D7D7;
     border-radius: 30px;
 }
+
+.nav-menu, .gg-menu{
+    z-index: 99;
+    display: none;
+}
+
 h4,h1,h2{
     margin : 0;
     font-style: normal;
@@ -334,7 +332,35 @@ footer{
     margin: 0 1vh 0 1vh ;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:769px) {
+    nav{
+        flex-direction: column;
+    }
+    
+    .nav-menu{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 2rem 2vw 2rem 90vw;
+    }
+
+    .nav-container{
+        display: none;
+        flex-direction: column-reverse;
+        padding: 10vh 0 0 0;
+        margin: -10vh 0 0 0;
+        background-color: #1A1A1A;
+        width: 100vw;
+        transition: background 250ms ease-in;
+    }
+    .nav-normal{
+        text-align: right;
+        margin: 0 0 0.5rem 0;
+    }
+    .gg-menu{
+        display: block;
+        color: #f1f1f1;
+    }
+    
     :root{
         font-size: 8px;
         overflow-x: hidden;
