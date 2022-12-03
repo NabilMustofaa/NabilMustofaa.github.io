@@ -87,6 +87,9 @@ body{
 li{
     text-decoration: none;
 }
+li{
+    text-decoration: none;
+}
 nav{
     width: 100vw;
     display: flex;
@@ -456,7 +459,6 @@ textarea{
     outline: none;
     color: #1A1A1A;
 }
-
 
 footer{
     background: #1A1A1A;
